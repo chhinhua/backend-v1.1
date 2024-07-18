@@ -1,0 +1,16 @@
+
+
+server:
+    port: 5000
+
+spring:
+    datasource:
+        url:  ${MYSQL_URL:jdbc:mysql://localhost:4407/duck}?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+        username: ${MYSQL_USERNAME:jinhua}
+        password: ${MYSQL_PASSWORD:Password@123}
+    data:
+        redis:
+            host: ${REDIS_HOSTNAME:localhost}
+            port: ${REDIS_PORT:6379}
+            password: ${REDIS_PASSWORD:Password@123}
+            use-redis-cache: true
